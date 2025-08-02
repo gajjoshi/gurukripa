@@ -18,13 +18,13 @@ export default function Home() {
         {/* Logo */}
         <div className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/logo2.png"
             alt="Logo"
-            width={70}
+            width={150}
             height={70}
             className="rounded-full"
           />
-          <span className="ml-3 text-2xl font-bold text-gray-900">GURUKRIPA</span>
+          {/* <span className="ml-3 text-2xl font-bold text-gray-900">GURUKRIPA</span> */}
         </div>
 
         {/* Hamburger Icon */}
