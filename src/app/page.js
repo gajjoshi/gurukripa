@@ -142,6 +142,63 @@ export default function Home() {
           At GURUKRIPA, we believe in blending tradition with innovation. Our journey began with a vision to transform industries through ethical practices, cutting-edge technology, and a relentless pursuit of excellence.
         </p>
       </motion.section>
+      {/* What Makes Us Unique Section */}
+<motion.section
+  className="py-20 bg-white text-center px-6"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+>
+<h2 className="text-4xl font-bold text-gray-900 mb-16 relative inline-block">
+  What Makes Us  <span className="text-yellow-500">Unique</span>
+  <span className="absolute left-0 bottom-[-10px] w-full h-[4px] bg-yellow-500 rounded-full"></span>
+</h2>
+
+
+  {/* Feature 1 - Green Building */}
+  <div className="flex flex-col md:flex-row items-center mb-16">
+    <div
+    className="w-full md:w-1/2 h-80 bg-cover bg-center md:rounded-r-[100px] rounded-md relative overflow-hidden"
+  style={{ backgroundImage: "url('/bg2.jpg')" }}
+    ></div>
+    <div className="w-full md:w-1/2 p-8 text-left">
+      <h3 className="text-3xl font-bold text-gray-900 mb-4">Green Building</h3>
+      <p className="text-lg text-gray-700">
+        We believe in sustainable construction. Our projects are designed to seamlessly blend with nature, creating eco-friendly spaces that benefit both people and the planet.
+      </p>
+    </div>
+  </div>
+
+  {/* Feature 2 - Smart Architecture */}
+  <div className="flex flex-col md:flex-row-reverse items-center mb-16">
+    <div
+      className="w-full md:w-1/2 h-80 bg-cover bg-center md:rounded-l-[100px] rounded-md"
+      style={{ backgroundImage: "url('/bg3.jpg')" }}
+    ></div>
+    <div className="w-full md:w-1/2 p-8 text-left">
+      <h3 className="text-3xl font-bold text-gray-900 mb-4">Smart Architecture</h3>
+      <p className="text-lg text-gray-700">
+        Our buildings integrate cutting-edge smart technologies, ensuring comfort, security, and efficiency at every level of living.
+      </p>
+    </div>
+  </div>
+
+  {/* Feature 3 - Unique Designs */}
+  <div className="flex flex-col md:flex-row items-center">
+    <div
+      className="w-full md:w-1/2 h-80 bg-cover bg-center md:rounded-r-[100px] rounded-md"
+      style={{ backgroundImage: "url('/bg4.jpg')" }}
+    ></div>
+    <div className="w-full md:w-1/2 p-8 text-left">
+      <h3 className="text-3xl font-bold text-gray-900 mb-4">Unique Architecture</h3>
+      <p className="text-lg text-gray-700">
+        Our designs stand out with unique architectural elements, combining luxury and functionality to craft timeless living experiences.
+      </p>
+    </div>
+  </div>
+</motion.section>
+
 
       {/* Vision Section */}
       <motion.section
@@ -171,6 +228,8 @@ export default function Home() {
           By 2035, GURUKRIPA envisions a global footprint, impacting lives through groundbreaking initiatives, fostering growth, and building a legacy of trust and excellence.
         </p>
       </motion.section>
+
+      
 
       {/* Contact Section */}
       <motion.section
