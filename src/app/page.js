@@ -91,38 +91,42 @@ export default function Home() {
         </div>
       </motion.div>
 
-      {/* Hero Section */}
-      <motion.section
-        className="h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-white to-gray-100"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <motion.h1
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-5xl md:text-6xl font-bold text-gray-900"
-        >
-          Welcome to <span className="text-yellow-500">GURUKRIPA</span>
-        </motion.h1>
-        <motion.p
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="mt-6 text-lg md:text-xl max-w-2xl text-gray-700"
-        >
-          Crafting a future where innovation meets excellence.
-        </motion.p>
-        <motion.a
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          href="#about"
-          className="mt-8 px-8 py-3 bg-yellow-500 text-black text-lg font-semibold rounded-lg shadow-md hover:bg-yellow-400 transition"
-        >
-          Learn More
-        </motion.a>
-      </motion.section>
+    <motion.section
+  className="h-screen flex flex-col justify-center items-center text-center px-6 bg-cover bg-center relative"
+  style={{ backgroundImage: "url('/bg1.jpg')" }}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+>
+  <div className="absolute inset-0 bg-black/40"></div>
+  <div className="relative z-10">
+    <motion.h1
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="text-5xl md:text-6xl font-bold text-white"
+    >
+      Welcome to <span className="text-yellow-500">GURUKRIPA</span>
+    </motion.h1>
+    <motion.p
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.2, duration: 0.8 }}
+      className="mt-6 mb-8 text-lg md:text-xl max-w-2xl text-gray-200"
+    >
+      Crafting a future where innovation meets excellence.
+    </motion.p>
+    <motion.a
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      href="#about"
+      className="mt-8 px-8 py-3 bg-yellow-500 text-black text-lg font-semibold rounded-lg shadow-md hover:bg-yellow-400 transition"
+    >
+      Learn More
+    </motion.a>
+  </div>
+</motion.section>
+
 
       {/* About Us Section */}
       <motion.section
